@@ -22,7 +22,14 @@ const Navbar = () => (
         height={24}
         className='object-contain'
       />
-      <h2 className='text-2xl font-extrabold text-white'>
+      <h2 className='text-2xl font-extrabold text-white flex gap-2'>
+        <Image
+          src="/images/logo.svg"
+          alt="logo"
+          width={30}
+          height={30}
+          className='object-contain'
+        />
         NEONEXA
       </h2>
       <Image
