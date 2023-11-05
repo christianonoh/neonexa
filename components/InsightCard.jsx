@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 
 const InsightCard = ({ title, subtitle, imgUrl, number }) => (
   <motion.div
+  key={number}
     variants={fadeIn('right', 'tween', 0.5 * number, 0.5)}
     className="flex mt-8 md:flex-row flex-col gap-4 cursor-pointer"
   >
