@@ -2,7 +2,7 @@
 import { InsightCard, TitleText, TypingText } from "@/components";
 import { insights } from "@/constants";
 import styles from "@/styles";
-import { fadeIn, staggerContainer } from "@/utils/motion";
+import { staggerContainer } from "@/utils/motion";
 import { motion } from "framer-motion";
 
 const Insights = () => (
