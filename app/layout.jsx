@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
         <link rel="manifest" href="/favicon/site.webmanifest" />
       </head>
-      <body>
+      <body className='overflow-x-hidden'>
         {children}
       </body>
     </html>
