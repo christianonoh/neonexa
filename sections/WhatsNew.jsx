@@ -24,6 +24,7 @@ const WhatsNew = () => (
         <div className="flex sm:gap-8 gap-2">
           {newFeatures.map((feature) => (
             <NewFeatures
+              key={feature.title}
               title={feature.title}
               img={feature.imgUrl}
               subtitle={feature.subtitle}
