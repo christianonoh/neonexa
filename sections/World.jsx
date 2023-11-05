@@ -42,6 +42,64 @@ const World = () => (
         <div className="absolute top-10 left-32 bg-[#5d6680] rounded-full w-[70px] h-[70px] p-1.5">
           <img src="/images/people-03.png" alt="people" />
         </div>
+
+        <div className="absolute top-[50px] right-[19%] w-[195px] h-[150px] p-[6px] rounded-[24px] bg-[#5D6680] invisible md:visible">
+          <img
+            src="/images/world-2.png"
+            alt="world"
+            className="w-full h-full rounded-[24px] object-cover"
+          />
+          <div className="absolute top-0 left-0 z-10 w-full h-full flex flex-col justify-end align-middle gap-4 bg-[rgba(255,255,255,0.2)] rounded-[24px] p-4">
+            <div className="h-[24px] w-auto flex relative">
+              <img
+                src="/images/people-02.png"
+                alt="people"
+                className="w-[24px] h-[24px] rounded-full"
+              />
+              <img
+                src="/images/people-01.png"
+                alt="people"
+                className="w-[24px] h-[24px] ml-[-12px] rounded-full relative z-[-1]"
+              />
+              <img
+                src="/images/people-03.png"
+                alt="people"
+                className="w-[24px] h-[24px] ml-[-12px] rounded-full relative z-[-2]"
+              />
+              <h5 className="h-[24px] text-left text-[10px] p-1 text-white bg-[#5d66804a]">+ 264 has joined</h5>
+            </div>
+            <h3 className="text-white font-bold">Hawkins Labs</h3>
+          </div>
+        </div>
+
+        <div className="absolute top-72 left-[10%] w-[195px] h-[150px] p-[6px] rounded-[24px] bg-[#5D6680] invisible md:visible">
+          <img
+            src="/images/world-1.png"
+            alt="world"
+            className="w-full h-full rounded-[24px] object-cover"
+          />
+          <div className="absolute top-0 left-0 z-10 w-full h-full flex flex-col justify-end align-middle gap-4 bg-[rgba(255,255,255,0.2)] rounded-[24px] p-4">
+            <div className="h-[24px] w-auto flex relative">
+              <img
+                src="/images/people-02.png"
+                alt="people"
+                className="w-[24px] h-[24px] rounded-full"
+              />
+              <img
+                src="/images/people-01.png"
+                alt="people"
+                className="w-[24px] h-[24px] ml-[-12px] rounded-full relative z-[-1]"
+              />
+              <img
+                src="/images/people-03.png"
+                alt="people"
+                className="w-[24px] h-[24px] ml-[-12px] rounded-full relative z-[-2]"
+              />
+              <h5 className="h-[24px] text-left text-[10px] p-1 text-white bg-[#5d66804a]">+ 264 has joined</h5>
+            </div>
+            <h3 className="text-white font-bold">The Upside Down</h3>
+          </div>
+        </div>
       </motion.div>
     </motion.div>
 
