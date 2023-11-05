@@ -19,6 +19,7 @@ const Insights = () => (
       <div>
         {insights.map((insight, index) => (
           <InsightCard
+            key={index + 1}
             number={index + 1}
             title={insight.title}
             subtitle={insight.subtitle}
