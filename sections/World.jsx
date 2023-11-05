@@ -29,6 +29,19 @@ const World = () => (
           alt="map"
           className="w-full h-full object-cover"
         />
+
+
+        <div className="absolute lg:bottom-28 bottom-1/2 right-[12%] bg-[#5d6680] rounded-full w-[70px] h-[70px] p-1.5">
+          <img src="/images/people-01.png" alt="people" />
+        </div>
+
+        <div className="absolute bottom-64 right-1/2 bg-[#5d6680] rounded-full w-[70px] h-[70px] p-1.5">
+          <img src="/images/people-02.png" alt="people" />
+        </div>
+
+        <div className="absolute top-10 left-32 bg-[#5d6680] rounded-full w-[70px] h-[70px] p-1.5">
+          <img src="/images/people-03.png" alt="people" />
+        </div>
       </motion.div>
     </motion.div>
 
