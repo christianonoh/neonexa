@@ -34,7 +34,11 @@ const GetStarted = () => (
         <TitleText title={<>Get started with just a few clicks</>} />
         <div className="max-w-sm">
           {startingFeatures.map((feature, index) => (
-          <StartSteps feature={feature} index={index} />
+          <StartSteps
+            key={index + 1}
+            feature={feature}
+            index={index} 
+          />
           ))}
         </div>
       </motion.div>
