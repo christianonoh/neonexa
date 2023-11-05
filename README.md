@@ -56,7 +56,7 @@ Neonexa is a metaverse website created as a personal project to explore and expe
 
 ## 🚀 Live Demo<a name="liveDemo"></a>
 
-- Check out PromptPal app [here.](https://prompt-pal-umber.vercel.app/)
+- Check out NeoNaxa app [here.](https://neonexa.vercel.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
