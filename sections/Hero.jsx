@@ -46,6 +46,7 @@ const Hero = () => (
           src={CoverImage}
           placeholder='blur'
           alt="cover"
+          priority={true}
           className='w-full sm:h-[500px] h-[300px] object-cover relative z-10 rounded-tl-[140px]'
         />
         <a href="#explore">
