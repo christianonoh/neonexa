@@ -12,12 +12,14 @@ const imgArr = [Planet6, Planet7, Planet8];
 
 const InsightCard = ({ title, subtitle, imgUrl, number }) => (
   <motion.div
-    variants={fadeIn('right', 'tween', 0.5 * number, 0.5)}
+    variants={fadeIn('right', 'tween', 0.3 * number, 0.5)}
     className="flex mt-8 md:flex-row flex-col gap-4 cursor-pointer"
   >
     <Image
       src={imgArr[number-1]}
       alt={title}
+      placeholder="blur"
+      sizes="(max-width: 767px) 100vw, 270px)"
       className="md:w-[270px] w-full h-[250px] object-cover rounded-3xl"
     />
     <div className="flex justify-between w-full items-center">

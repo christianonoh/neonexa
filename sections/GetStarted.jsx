@@ -29,7 +29,7 @@ const GetStarted = () => (
       </motion.div>
 
       <motion.div
-        variants={fadeIn('left', 'tween', 0.25, 1 )}
+        variants={fadeIn('left', 'tween', 0.25, 0.8 )}
         className="lg:basis-1/2 z-10"
       >
         <TypingText title="| How NEONEXA works" textStyles="" />

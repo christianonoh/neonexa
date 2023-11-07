@@ -16,7 +16,7 @@ const Feedback = () => (
       className={`${styles.innerWidth} flex lg:flex-row flex-col gap-6 mx-auto`}
     >
       <motion.div
-        variants={fadeIn('right', 'tween', 0.2, 1)}
+        variants={fadeIn('right', 'tween', 0.2, 0.8)}
         className="sm:p-8 p-4 flex flex-col flex-[0.5] gradient-05
          rounded-3xl max-w-[370px] text-white justify-end border
           border-[#6a6a6a] relative"
@@ -37,12 +37,13 @@ const Feedback = () => (
         </p>
       </motion.div>
       <motion.div
-        variants={fadeIn('left', 'tween', 0.2, 1)}
+        variants={fadeIn('left', 'tween', 0.2, 0.8)}
         className={`relative flex-1 ${styles.flexCenter}`}
       >
         <Image
           src={Planet9}
           alt="planet 09"
+          placeholder="blur"
           className="w-full lg:h-[610px] h-auto min-h-[210px] object-cover rounded-3xl"
         />
 

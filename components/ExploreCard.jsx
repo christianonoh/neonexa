@@ -16,7 +16,7 @@ const imgArr = [World1, World2, World3, World4, World5]
 
 const ExploreCard = ({ index, active, handleClick, id, imgUrl, title }) => (
   <motion.div
-    variants={fadeIn('right', 'spring', 0.5 * index, 0.75)}
+    variants={fadeIn('right', 'spring', 0.3 * index, 0.75)}
     className={`relative ${active === id ? 'lg:flex-[3.5] flex-[10]' :
     'lg:flex-[0.5] flex-[2]'} flex justify-center items-center min-w-[170px] 
     h-[700px] transition-[flex] duration-[0.75s] ease-out-flex cursor-pointer`}
@@ -26,6 +26,7 @@ const ExploreCard = ({ index, active, handleClick, id, imgUrl, title }) => (
       src={imgArr[index]}
       alt={title}
       className='absolute object-cover w-full h-full rounded-3xl'
+      placeholder='blur'
       priority={true}
     />
     {active !== id ? (

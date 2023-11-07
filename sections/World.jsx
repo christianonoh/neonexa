@@ -28,7 +28,7 @@ const World = () => (
       />
 
       <motion.div
-        variants={fadeIn('up', 'tween', 0.25, 1)}
+        variants={fadeIn('up', 'tween', 0.25, 0.8)}
         className="relative w-full h-[550px] mt-16 flex"
       >
         <Image
