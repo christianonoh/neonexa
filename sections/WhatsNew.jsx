@@ -5,6 +5,8 @@ import { newFeatures } from "@/constants";
 import styles from "@/styles";
 import { fadeIn, planetVariants, staggerContainer } from "@/utils/motion";
 import { motion } from "framer-motion";
+import WhatsNewImg from '/public/images/whats-new.png'
+import Image from "next/image";
 
 const WhatsNew = () => (
   <section className={`${styles.paddings} relative z10`}>
@@ -16,18 +18,19 @@ const WhatsNew = () => (
       className={`${styles.innerWidth} flex lg:flex-row flex-col items-center mx-auto gap-8`}
     >
       <motion.div
-        variants={fadeIn('left', 'tween', 0.25, 1 )}
+        variants={fadeIn('right', 'tween', 0.25, 0.8 )}
         className="lg:basis-1/2 mx-auto"
       >
         <TypingText title="| What's New?" />
         <TitleText title={<>What's new about Metaversus?</>} textStyles="my-4" />
         <div className="flex sm:gap-8 gap-2">
-          {newFeatures.map((feature) => (
+          {newFeatures.map((feature, index) => (
             <NewFeatures
               key={feature.title}
               title={feature.title}
               img={feature.imgUrl}
               subtitle={feature.subtitle}
+              index={index}
             />
           ))}
         </div>
@@ -37,8 +40,8 @@ const WhatsNew = () => (
         variants={planetVariants('right')}
         className="lg:basis-1/2 mx-auto"
       >
-        <img
-          src="/images/whats-new.png"
+        <Image
+          src={WhatsNewImg}
           alt="get started"
           className="object-contain w-[90%] h-[90%]"
         />

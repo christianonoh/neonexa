@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <img src="/public/images/logo.svg" alt="logo" width="80" height="auto" style="border-radius: 50%; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);"/>
+  <img src="/public/favicon/favicon.png" alt="logo" width="80" height="auto" style="border-radius: 50%; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);"/>
   <h1 style="font-family: 'Arial', sans-serif; color: #333; font-weight: bold; margin-top: 10px;">NEONEXA</h1>
 </div>
 
@@ -56,7 +56,7 @@ Neonexa is a metaverse website created as a personal project to explore and expe
 
 ## 🚀 Live Demo<a name="liveDemo"></a>
 
-- Check out NeoNexa app [here.](https://neonexa.vercel.app/)
+- Check out NeoNaxa app [here.](https://neonexa.vercel.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

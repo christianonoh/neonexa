@@ -1,8 +1,10 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import styles from '../styles';
-import { fadeIn, slideIn, staggerContainer, textVariant } from '@/utils/motion';
+import ArrowDown from '/public/icons/arrow-down.svg'
+import { fadeIn, staggerContainer } from '@/utils/motion';
 import { TypingText } from '@/components';
 
 const About = () => (
@@ -18,7 +20,7 @@ const About = () => (
       <TypingText title="| About Metaverse" textStyles="text-center" />
 
       <motion.p
-        variants={fadeIn('right', 'tween', 0.2, 1)}
+        variants={fadeIn('right', 'tween', 0.1, 0.8)}
         className={`mt-2 sm:text-3xl text-xl text-center text-secondary-white`}
       >
         <span className='font-extrabold text-white'>Metaverse</span> is a new thing in the future, where you can enjoy the virtual world by feeling 
@@ -27,12 +29,14 @@ const About = () => (
         the metaverse world you want, turn your dreams into reality. Let's <span className='font-extrabold text-white'>explore</span> the madness of 
         the metaverse by scrolling down
       </motion.p>
-      <motion.img
-        src='/icons/arrow-down.svg'
-        alt='arrow down'
-        variants={fadeIn('up', 'tween', 0.3, 1)}
-        className='h-7 w-5 mt-7 object-contain'
-      />
+      <motion.div
+        variants={fadeIn('up', 'tween', 0.2, 0.8)}>
+        <Image
+          src={ArrowDown}
+          alt='arrow down'
+          className='h-7 w-5 mt-7 object-contain'
+        />
+      </motion.div>
     </motion.div>
 
   </section>

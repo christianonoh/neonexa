@@ -5,6 +5,8 @@ import { startingFeatures } from "@/constants";
 import styles from "@/styles";
 import { fadeIn, planetVariants, staggerContainer } from "@/utils/motion";
 import { motion } from "framer-motion"
+import GetStartedImg from '/public/images/get-started.png'
+import Image from "next/image";
 
 const GetStarted = () => (
   <section className={`${styles.paddings} relative z-10`}>
@@ -19,15 +21,15 @@ const GetStarted = () => (
         variants={planetVariants('left')}
         className="lg:basis-1/2 mx-auto"
       >
-        <img
-          src="/images/get-started.png"
+        <Image
+          src={GetStartedImg}
           alt="get started"
           className="object-contain w-[90%] h-[90%]"
         />
       </motion.div>
 
       <motion.div
-        variants={fadeIn('left', 'tween', 0.25, 1 )}
+        variants={fadeIn('left', 'tween', 0.25, 0.8 )}
         className="lg:basis-1/2 z-10"
       >
         <TypingText title="| How NEONEXA works" textStyles="" />

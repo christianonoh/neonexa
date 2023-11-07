@@ -4,6 +4,14 @@ import styles from "@/styles";
 import { fadeIn, staggerContainer } from "@/utils/motion";
 import { motion } from "framer-motion";
 import { socials } from "@/constants";
+import Headset from '/public/icons/headset.svg'
+import Image from "next/image";
+import Twitter from '/public/icons/twitter.svg'
+import LinkedIn from '/public/icons/linkedin.svg'
+import IG from '/public/icons/instagram.svg'
+import Facebook from '/public/icons/facebook.svg'
+
+const imgArr = [Twitter, LinkedIn, IG, Facebook];
 
 const Footer = () => (
   <footer className={`${styles.paddings} relative`}>
@@ -12,7 +20,7 @@ const Footer = () => (
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: 0.25 }}
-      className={`${styles.innerWidth}`}
+      className={`${styles.innerWidth} mx-auto`}
     >
       <div className="footer_gradient relative" />
       <motion.div
@@ -23,8 +31,8 @@ const Footer = () => (
           Enter the Metaverse
         </h3> 
         <div className={`${styles.flexCenter} flex gap-2 bg-[#25618B] px-4 rounded-3xl`}>
-          <img
-            src="/icons/headset.svg"
+          <Image
+            src={Headset}
             className="w-6 h-6"
             alt="headset" />
           <p className="uppercase text-white font-thin text-xs">Enter metaverse</p>
@@ -51,10 +59,10 @@ const Footer = () => (
         </p>
 
         <div className="flex gap-4">
-          {socials.map((social) => (
-            <img
+          {socials.map((social, index) => (
+            <Image 
               key={social.name}
-              src={social.url}
+              src={imgArr[index]}
               alt={social.name}
               className="w-[20px] h-[20px]"
             />
