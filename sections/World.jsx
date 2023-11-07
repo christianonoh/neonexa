@@ -4,6 +4,13 @@ import { TitleText, TypingText } from "@/components";
 import styles from "@/styles";
 import { fadeIn, staggerContainer } from "@/utils/motion";
 import { motion } from "framer-motion";
+import MapImg from "/public/images/map.png"
+import People1 from "/public/images/people-01.png"
+import People2 from "/public/images/people-02.png"
+import People3 from "/public/images/people-03.png"
+import World1 from "/public/images/world-1.png"
+import World2 from "/public/images/world-2.png"
+import Image from "next/image";
 
 const World = () => (
   <section className={`${styles.paddings} relative z-10`}>
@@ -12,7 +19,7 @@ const World = () => (
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className={`${styles.innerWidth}`}
+      className={`${styles.innerWidth} mx-auto`}
     >
       <TypingText title="| People on the World" textStyles="text-center" />
       <TitleText 
@@ -24,45 +31,45 @@ const World = () => (
         variants={fadeIn('up', 'tween', 0.25, 1)}
         className="relative w-full h-[550px] mt-16 flex"
       >
-        <img
-          src="/images/map.png"
+        <Image
+          src={MapImg}
           alt="map"
           className="w-full h-full object-cover"
         />
 
 
         <div className="absolute lg:bottom-28 bottom-1/2 right-[12%] bg-[#5d6680] rounded-full w-[70px] h-[70px] p-1.5">
-          <img src="/images/people-01.png" alt="people" />
+          <Image src={People1} alt="people" />
         </div>
 
         <div className="absolute bottom-64 right-1/2 bg-[#5d6680] rounded-full w-[70px] h-[70px] p-1.5">
-          <img src="/images/people-02.png" alt="people" />
+          <Image src={People2} alt="people" />
         </div>
 
         <div className="absolute top-10 left-32 bg-[#5d6680] rounded-full w-[70px] h-[70px] p-1.5">
-          <img src="/images/people-03.png" alt="people" />
+          <Image src={People3} alt="people" />
         </div>
 
         <div className="absolute top-[50px] right-[19%] w-[195px] h-[150px] p-[6px] rounded-[24px] bg-[#5D6680] invisible md:visible">
-          <img
-            src="/images/world-2.png"
+          <Image
+            src={World2}
             alt="world"
             className="w-full h-full rounded-[24px] object-cover"
           />
           <div className="absolute top-0 left-0 z-10 w-full h-full flex flex-col justify-end align-middle gap-4 bg-[rgba(255,255,255,0.2)] rounded-[24px] p-4">
             <div className="h-[24px] w-auto flex relative">
-              <img
-                src="/images/people-02.png"
+              <Image
+                src={People2}
                 alt="people"
                 className="w-[24px] h-[24px] rounded-full"
               />
-              <img
-                src="/images/people-01.png"
+              <Image
+                src={People1}
                 alt="people"
                 className="w-[24px] h-[24px] ml-[-12px] rounded-full relative z-[-1]"
               />
-              <img
-                src="/images/people-03.png"
+              <Image
+                src={People3}
                 alt="people"
                 className="w-[24px] h-[24px] ml-[-12px] rounded-full relative z-[-2]"
               />
@@ -73,25 +80,25 @@ const World = () => (
         </div>
 
         <div className="absolute top-72 left-[10%] w-[195px] h-[150px] p-[6px] rounded-[24px] bg-[#5D6680] invisible md:visible">
-          <img
-            src="/images/world-1.png"
+          <Image
+            src={World1}
             alt="world"
             className="w-full h-full rounded-[24px] object-cover"
           />
           <div className="absolute top-0 left-0 z-10 w-full h-full flex flex-col justify-end align-middle gap-4 bg-[rgba(255,255,255,0.2)] rounded-[24px] p-4">
             <div className="h-[24px] w-auto flex relative">
-              <img
-                src="/images/people-02.png"
+              <Image
+                src={People2}
                 alt="people"
                 className="w-[24px] h-[24px] rounded-full"
               />
-              <img
-                src="/images/people-01.png"
+              <Image
+                src={People1}
                 alt="people"
                 className="w-[24px] h-[24px] ml-[-12px] rounded-full relative z-[-1]"
               />
-              <img
-                src="/images/people-03.png"
+              <Image
+                src={People3}
                 alt="people"
                 className="w-[24px] h-[24px] ml-[-12px] rounded-full relative z-[-2]"
               />

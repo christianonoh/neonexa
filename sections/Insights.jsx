@@ -12,7 +12,7 @@ const Insights = () => (
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className={`${styles.innerWidth}`}
+      className={`${styles.innerWidth} mx-auto`}
     >
       <TypingText title="| Insight" textStyles="text-center" />
       <TitleText title={<>Insight about metaverse</>} textStyles="max-w-4xl text-center mx-auto" />

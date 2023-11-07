@@ -1,8 +1,18 @@
 'use client';
 
+import Image from 'next/image'
 import styles from "@/styles";
 import { fadeIn } from "@/utils/motion";
 import { motion } from "framer-motion";
+import Headset from "/public/icons/headset.svg"
+import World1 from '/public/images/planet-01.png'
+import World2 from '/public/images/planet-02.png'
+import World3 from '/public/images/planet-03.png'
+import World4 from '/public/images/planet-04.png'
+import World5 from '/public/images/planet-05.png'
+
+const imgArr = [World1, World2, World3, World4, World5]
+
 
 const ExploreCard = ({ index, active, handleClick, id, imgUrl, title }) => (
   <motion.div
@@ -12,10 +22,11 @@ const ExploreCard = ({ index, active, handleClick, id, imgUrl, title }) => (
     h-[700px] transition-[flex] duration-[0.75s] ease-out-flex cursor-pointer`}
     onClick={() => handleClick(id)}
   >
-    <img 
-      src={imgUrl}
+    <Image 
+      src={imgArr[index]}
       alt={title}
       className='absolute object-cover w-full h-full rounded-3xl'
+      priority={true}
     />
     {active !== id ? (
       <h3 className="absolute text-white font-bold sm:text-2xl text-lg
@@ -26,7 +37,7 @@ const ExploreCard = ({ index, active, handleClick, id, imgUrl, title }) => (
       <div className="absolute bottom-0 p-8 bg_black_05 w-full rounded-b-3xl
        flex-col justify-start">
         <div className={`glassmorphism rounded-2xl w-[60px] h-[60px] ${styles.flexCenter}`}>
-          <img src="/icons/headset.svg" alt="headset" className="object-contain w-1/2 h-1/2"/>
+          <Image src={Headset} alt="headset" className="object-contain w-1/2 h-1/2"/>
         </div>
         <p className="text-white text-base font-normal uppercase mt-2">
           Enter Metaverse

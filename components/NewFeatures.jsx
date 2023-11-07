@@ -1,13 +1,18 @@
 import styles from "@/styles";
+import Vrpano from '/public/icons/vrpano.svg'
+import Headset from '/public/icons/headset.svg'
+import Image from "next/image";
 
-const NewFeatures = ({ title, img, subtitle }) => (
+const imgArr = [Vrpano, Headset];
+
+const NewFeatures = ({ title, index, subtitle }) => (
   <div
     key={title}
     className="mt-5 w-1/2"
   >
     <div className={`w-16 h-16 bg-[#323f5d] rounded-2xl mr-6 flex-none font-bold ${styles.flexCenter}`}>
-      <img
-        src={img}
+      <Image
+        src={imgArr[index]}
         alt={title}
         className="object-contain w-1/2 h-1/2"
       />
